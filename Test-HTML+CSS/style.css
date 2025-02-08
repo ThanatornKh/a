@@ -1,0 +1,249 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Gradient */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #363535);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: #222;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar .active {
+    font-weight: bold;
+    border-bottom: 3px solid white;
+}
+
+/* กล่องเนื้อหา */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin-top: 100px;
+}
+
+/* หัวข้อ */
+h1 {
+    font-size: 26px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* ปุ่ม Login / Register */
+button.zoom-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, #8e44ad, #6c5ce7); /* ม่วงทูโทน */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s, box-shadow 0.3s;
+}
+
+/* Effect Zoom-in-out */
+button.zoom-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #9b59b6, #a29bfe); /* ม่วงไล่ระดับ */
+    box-shadow: 0px 5px 15px rgba(108, 92, 231, 0.5);
+}
+
+button.zoom-btn:active {
+    transform: scale(0.95);
+    background: linear-gradient(135deg, #d8b4fe, #c084fc); /* สีม่วงอ่อนลง */
+    box-shadow: none;
+}
+
+/* แบบฟอร์มติดต่อ */
+textarea {
+    height: 100px;
+}
+
+/* ปุ่มออกจากระบบ */
+.logout-btn {
+    margin-left: 10px;
+    padding: 5px 5px;  /* ลดขนาด */
+    font-size: 14px;    /* ลดขนาดตัวอักษร */
+    border-radius: 5px;
+    background: #ff3333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+.logout-btn:active {
+    transform: scale(0.95);
+}
+
+/* พื้นหลังของหน้า Contact */
+.contact-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+    margin-top: 120px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Contact */
+.contact-container h1 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* รายละเอียดการติดต่อ */
+.contact-info {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #0071e3;
+}
+
+/* Input Field */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* ปรับขนาดของ Textarea */
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* ปุ่มส่งข้อความ */
+button.zoom-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+button.zoom-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+button.zoom-btn:active {
+    transform: scale(0.95);
+}
+
+/* เอฟเฟกต์ Fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ปรับขนาดรูปภาพในหน้า Home */
+.home-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ที่รูป */
+.home-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ปรับขนาดรูปภาพในหน้า About */
+.about-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ที่รูป */
+.about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}

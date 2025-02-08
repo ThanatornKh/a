@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Devilish</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="products.html"><i class="fas fa-box-open"></i> Products</a>
+        <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+        <button onclick="logout()" class="logout-btn">ออกจากระบบ</button>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <h1>📞 ติดต่อเรา</h1>
+        <p>เรายินดีให้บริการทุกคำถามและข้อเสนอแนะของคุณ</p>
+
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> ที่อยู่: Devilish Industries, Bangkok, Thailand</p>
+            <p><i class="fas fa-envelope"></i> อีเมล: Thanatorn@gmail.com</p>
+            <p><i class="fas fa-clock"></i> IG: thanatorn_bank</p>
+            <p><i class="fas fa-clock"></i> FB: Thanatorn Qwanmankong</p>
+            <p><i class="fas fa-phone"></i> โทรศัพท์: 061-603-4862</p>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="👤 ชื่อของคุณ" required>
+            <input type="email" id="email" placeholder="📧 อีเมลของคุณ" required>
+            <textarea id="message" placeholder="✍️ ข้อความของคุณ" required></textarea>
+            <button type="submit" class="zoom-btn">📩 ส่งข้อความ</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
